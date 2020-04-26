@@ -28,7 +28,6 @@ const sect = [
           const wrapper = shallow(<Acordian sections={sect} />)
           expect(toJson(wrapper)).toMatchSnapshot()
       })
-
       
       it('opens sections correctly', () => {
           const wrapper = shallow(<Acordian sections={sect} />)
@@ -37,6 +36,5 @@ const sect = [
           wrapper.find('button').at(2).simulate('click')
           expect(toJson(wrapper)).toMatchSnapshot()
       })
-
 
   })
